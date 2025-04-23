@@ -1203,6 +1203,7 @@ html {
 
 .recipes__right {
   padding-bottom: 30rem;
+  flex-grow: 1;
 }
 
 .recipe-block:not(:first-child) {
