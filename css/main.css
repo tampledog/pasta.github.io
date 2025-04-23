@@ -1579,6 +1579,14 @@ html {
     padding-top: 10.2rem;
   }
 
+  .article-list {
+    border-radius: 12px;
+  }
+
+  .video-block {
+    border-radius: 16px;
+  }
+
   .video-block__button {
     width: 55px;
     height: 55px;
@@ -1622,6 +1630,7 @@ html {
 
   .value-table {
     font-size: 1.6rem;
+    border-radius: 12px;
   }
 
   .value-table__col {
@@ -1782,6 +1791,7 @@ html {
 
   .detail-hero__inner {
     padding: 2rem 1.6rem 0;
+    border-radius: 16px;
   }
 
   .detail-hero__text {
