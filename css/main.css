@@ -1071,7 +1071,7 @@ html {
 
 .detail-video {
   background-image: url("../img/m-video.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-color: #FBF6E6;
   background-position: center;
   background-repeat: no-repeat;
@@ -1079,6 +1079,7 @@ html {
   padding-top: 41rem;
   padding-bottom: 27rem;
   min-height: 1170px;
+  background-position-y: 100%;
 }
 
 .detail-video .bread {
@@ -1182,6 +1183,7 @@ html {
 .recipes {
   background-color: #FBF6E6;
   padding-top: 140px;
+  margin-top: -2px;
 }
 
 .recipes-image {
@@ -1573,12 +1575,33 @@ html {
 }
 
 @media (max-width: 768px) {
+  .detail-hero {
+    padding-top: 10.2rem;
+  }
+
+  .video-block__button {
+    width: 55px;
+    height: 55px;
+  }
+
+  .video-block__button svg {
+    margin-left: 4px;
+    width: 19px;
+    height: 19px;
+  }
+
   .value-table ul {
     padding-left: 30px;
   }
 
   .value-table ul li {
     font-size: 1.6rem;
+  }
+
+  .detail .product__logo {
+    left: 16px;
+    transform: unset;
+    top: 1.9rem;
   }
 
   .recipes {
@@ -1603,6 +1626,13 @@ html {
 
   .value-table__col {
     padding: 15px;
+  }
+
+  .value-table__col:last-child {
+    padding-left: 40px;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .recipe-block__title {
