@@ -135,10 +135,31 @@ document.addEventListener('DOMContentLoaded', () => {
       acc.querySelector('.accordion__info').style.height = `0px`;
     }
   }
-
   const accordionsContainers = document.querySelectorAll('.js-accordions');
-
   accordionsContainers.forEach((item) => {
     new Accordions(item);
   });
+
+  class Video {
+    constructor(container) {
+      this.container = container;
+      this.playButton = container.querySelector('.video-block__button');
+      this.video = container.querySelector('video');
+
+      this.playButton.addEventListener('click', () => {
+        this.container.classList.add('active');
+        this.video.play();
+      });
+    }
+
+
+  }
+
+  const videoBlocks = document.querySelectorAll('.video-block');
+  videoBlocks.forEach((item) => {
+    new Video(item);
+  });
+
 })
+
+

@@ -1124,6 +1124,11 @@ html {
   overflow: hidden;
 }
 
+.video-block.active .video-block__decor {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .video-block__inner {
   width: 100%;
   padding-bottom: 56%;
@@ -1132,6 +1137,14 @@ html {
 .video-block__inner {
   position: relative;
   overflow: hidden;
+}
+
+.video-block__inner video {
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  left: -5px;
+  top: -5px;
 }
 
 .video-block__button {
@@ -1161,6 +1174,9 @@ html {
   display: flex;
   align-items: flex-end;
   background-color: #D9D17F;
+  opacity: 1;
+  transition: all 120ms;
+  pointer-events: all;
 }
 
 .video-block__wave {
