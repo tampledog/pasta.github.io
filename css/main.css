@@ -972,6 +972,8 @@ html {
 }
 
 .bread-pics {
+  display: flex;
+  align-items: center;
   max-width: 338px;
   flex-grow: 1;
 }
@@ -1237,6 +1239,7 @@ html {
   min-height: 71px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .accordion__title {
@@ -1256,7 +1259,7 @@ html {
   position: absolute;
   border-radius: 50%;
   right: 22px;
-  top: 10px;
+  top: 15px;
   transition: all 150ms;
 }
 
